@@ -1,0 +1,30 @@
+{
+  "name": "@parcel/svelte-ts",
+  "version": "2.0.1",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "PARCEL_WORKERS=0 parcel --no-cache src/index.html",
+    "clean-demo": "rm -rf .parcel-cache dist && yarn demo"
+  },
+  "devDependencies": {
+    "@parcel/core": "^2.0.1",
+    "svelte-preprocess": "^4.10.1",
+    "typescript": "^4.5.4"
+  },
+  "browser": "dist/legacy/index.js",
+  "browserModern": "dist/modern/index.js",
+  "targets": {
+    "browser": {
+      "engines": {
+        "browsers": [
+          "last 1 Chrome version"
+        ]
+      }
+    }
+  },
+  "dependencies": {
+    "parcel": "^2.0.1",
+    "svelte": "^3.44.3"
+  }
+}
